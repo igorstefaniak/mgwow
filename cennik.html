@@ -1,0 +1,115 @@
+<!-- Igor Stefaniak 2023 -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Igor Stefaniak">
+    <meta name="copyright" content="Igor Stefaniak">
+    <meta name="theme-color" content="#">
+    <meta name="robots" content="index,follow">
+
+    <link rel="icon" href="./">
+    <title>Cennik - M.G. WOW - Marlena Gołębiowska</title>
+
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href='./styles/main-style.css'>
+    <link rel="stylesheet" href='./styles/web-el-style.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"
+        integrity="sha512-HDCfX3BneBQMfloBfluMQe6yio+OfXnbKAbI0SnfcZ4YfZL670nc52Aue1bBhgXa+QdWsBdhMVR2hYROljf+Fg=="
+        crossorigin="anonymous"></script>
+
+    <script src='https://code.jquery.com/jquery-3.6.4.min.js'></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+</head>
+<body>
+        <nav class="top-navbar">
+            <div class="left-navbar">
+                <a title="Strona główna" href="./">
+                    <img width="190" alt="Willa IMA" src="./images/willa_ima_logo_white.png">
+                </a>
+            </div>
+            <div class="right-navbar items-navbar">
+                <a title="Strona główna" href="./">
+                    <i class='bx bx-home'></i>
+                    <div class="nav-link-text">Strona Główna</div>
+                </a>
+                <a title="O Nas" href="./">
+                    <i class='bx bx-group'></i>
+                    <div class="nav-link-text">O Nas</div>
+                </a>
+                <a title="Opinie" href="./">
+                    <i class='bx bx-image-alt'></i>
+                    <div class="nav-link-text">Opinie</div>
+                </a>
+                <a title="Galeria" href="./">
+                    <i class='bx bx-image-alt'></i>
+                    <div class="nav-link-text">Galeria</div>
+                </a>
+                <a title="Cennik" href="./">
+                    <i class='bx bx-wallet'></i>
+                    <div class="nav-link-text">Cennik</div>
+                </a>
+                <a title="Kontakt" href="./">
+                    <i class='bx bx-phone'></i>
+                    <div class="nav-link-text">Kontakt</div>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <section class="line-bar" style="margin-top: 200px">
+                <div class="pros-el-hover">
+                    <div class="pros-el" data-aos="fade-down" data-aos-delay="50" data-aos-easing="linear"><i
+                            class='bx bx-purchase-tag-alt'></i>
+                        <div style="font-size: 40px;font-weight: 600;font-family:'Outfit';">Cennik</div>
+                    </div>
+                </div>
+            </section>
+            <table>
+                <tr>
+                    <th>Typ usługi</th>
+                    <th>Cena</th>
+                    <th>Dodatkowe uwagi</th>
+                    <th>Przykładowe zdjęcie</th>
+                  </tr>
+                  <tr>
+                    <td>Mycie okien
+                        <ul><li>okno pojedyncze</li><li>okno podwójne</li><li>okno balkonowe</li><li>okno tarasowe</li></ul>
+                    </td>
+                    <td>100zł</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+            </table>
+        </main>
+
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+    align-items: center;
+            }
+            table {
+                border: black 6px solid;
+                border-radius: 12px;
+  overflow: hidden;
+}
+table td {
+    text-align: center;
+}
+        </style>
+
+    <script src='./scripts/nav.js'></script>
+    
+
+
+</body>
