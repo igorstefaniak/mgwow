@@ -51,6 +51,7 @@
         #info{
           flex-direction: column-reverse;
         }
+        .left-side-bar{scale: 0.6;}
     }
     
     @media only screen and (max-width:575px) and (min-width:360px) {
@@ -103,7 +104,33 @@
         #info{
           flex-direction: column-reverse;
         }
-    }
+        .left-side-bar {
+          .call{
+            font-size: 20px;
+            & i {
+              font-size: 28px;
+          }
+          
+        }
+      }
+        .background {
+          & img {
+            height: 100vh;
+            width: fit-content;
+            object-fit:cover;
+          }
+          .text{
+            width: 100%
+          }
+          & h1{
+            font-size: 28px;
+
+          }
+          & h2{
+            font-size: 16px;
+          }
+        }
+      }
     
     @media only screen and (max-width:899px) and (min-width:576px) {
       .top-navbar {

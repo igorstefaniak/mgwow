@@ -23,6 +23,10 @@ body {
     margin: 0;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 /* @media (prefers-color-scheme: light) {
     :root {
         --background-color: #FFF;
@@ -49,7 +53,35 @@ body {
     opacity: 0;
 }
 
-background {
+.left-side-bar{
+    position: fixed;
+    top: 20%;
+    z-index: 999999;
+    .call{
+        background-color: var(--accent);
+        color: #fff;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 700;
+        & i {
+            font-size: 46px;
+            line-height: unset;
+        }
+    }
+    .invisible{
+        display: none;
+        color:white
+
+    }
+    .call:hover .invisible{
+        display: initial;
+        margin-left: 20px;
+    }
+}
+
+.background {
     overflow: hidden;
     height: 100vh;
     display: flex;
@@ -102,7 +134,7 @@ background {
     }
 }
 
-background svg {
+.background svg {
     object-fit: cover;
 
 }
@@ -297,7 +329,7 @@ background svg {
 
 
 :root {
-    --wrapper: 40em;
+    --wrapper: 60em;
     --gutter: 20px;
     --noOfColumns: 4;
     --ratioA: 1;

@@ -1,10 +1,5 @@
-$('img[data-enlargable]').addClass('img-enlargable')
-
-
-$('div.maximizeminimize-icon-button').click(function () {
-    console.log($('~ .img-enlargable', this)[0].dataset.description)
-
-    var src = $('~ .img-enlargable', this).attr('src');
+$('img[data-enlargable]').addClass('img-enlargable').click(function () {
+    var src = $(this).attr('src');
     $('<div class="gallery">').css({
         opacity: '0',
         background: 'RGBA(0,0,0,.5)',
@@ -16,28 +11,23 @@ $('div.maximizeminimize-icon-button').click(function () {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        transition: 'all 500ms',
-        flexDirection: 'column'
+        transition: 'all 500ms'
     }).appendTo('body');
-
+    $('<div class="displayer">').appendTo($('.gallery'))
     $('<img class="image">').attr('src', src).css({
         cursor: 'zoom-out',
+        height: '95vh',
         opacity: '0',
-        maxHeight: '100%',
-        maxWidth: '100%',
-        margin: '10px',
+        borderRadius: '12px',
         transition: 'all 500ms'}).click(function () {
             $('.gallery').css('opacity','0');
             setTimeout(function () {$('.gallery').remove();}, 300)
         
-        }).appendTo($('.gallery'));
+        }).appendTo($('.displayer'));
 
-    $('<div>').html($('~ .img-enlargable', this)[0].dataset.description).appendTo($('.gallery'));
     setTimeout(function () {
         $('.gallery').css('opacity', '1')[0];
         $('.image').css('opacity', '1')[0];
     }
         , 5);
-
-
 });
