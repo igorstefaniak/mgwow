@@ -35,7 +35,7 @@
         <nav class="top-navbar">
             <div class="left-navbar">
                 <a title="Strona główna" href="./">
-                    <img width="190" alt="Willa IMA" src="./images/willa_ima_logo_white.png">
+                    <img width="190" alt="Willa IMA" src="https://placehold.co/60x9/6fb1fc/FFF?text=LOGO">
                 </a>
             </div>
             <div class="right-navbar items-navbar">
@@ -51,7 +51,7 @@
                     <i class='bx bx-image-alt'></i>
                     <div class="nav-link-text">Opinie</div>
                 </a>
-                <a title="Galeria" href="./">
+                <a title="Galeria" href="./cennik.html">
                     <i class='bx bx-image-alt'></i>
                     <div class="nav-link-text">Galeria</div>
                 </a>
@@ -66,7 +66,7 @@
             </div>
         </nav>
         <main>
-            <section class="line-bar" style="margin-top: 200px">
+            <section class="line-bar" style="margin-top: 60px">
                 <div class="pros-el-hover">
                     <div class="pros-el" data-aos="fade-down" data-aos-delay="50" data-aos-easing="linear"><i
                             class='bx bx-purchase-tag-alt'></i>
@@ -89,26 +89,58 @@
                     <td>-</td>
                     <td>-</td>
                   </tr>
+                  <tr>
+                    <td>Mycie okien
+                        <ul><li>okno pojedyncze</li><li>okno podwójne</li><li>okno balkonowe</li><li>okno tarasowe</li></ul>
+                    </td>
+                    <td>100zł</td>
+                    <td>-</td>
+                    <td><img src="https://placehold.co/500x500/6fb1fc/FFF?text=Przykładowe+zdjęcie" alt="Starry sky" width="300px" height="auto" loading="lazy" data-enlargable></td>
+                  </tr>
             </table>
         </main>
 
         <style>
-            main {
-                display: flex;
-                flex-direction: column;
-    align-items: center;
-            }
-            table {
-                border: black 6px solid;
-                border-radius: 12px;
-  overflow: hidden;
-}
-table td {
-    text-align: center;
-}
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        table {
+            font-size: 18px;
+            border-collapse: collapse;
+            margin: 20px;
+            background-color: #FFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        table img{
+            border-radius: 10px;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 16px;
+        }
+
+        th {
+            border-bottom: #e4e4eb 3px solid;
+            color: #494c5f;
+        }
+
+        td {
+            color: #6d708d;
+            border-bottom: #e4e4eb 3px solid;
+        }
         </style>
 
     <script src='./scripts/nav.js'></script>
+    <script src='./scripts/gallery.js'></script>
     
 
 
